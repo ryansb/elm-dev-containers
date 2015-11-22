@@ -2,7 +2,7 @@ FROM fedora:23
 
 MAINTAINER Ryan Scott Brown
 
-RUN dnf install -y tar
+RUN dnf install -y tar && dnf clean all
 
 RUN curl -L -s https://haskell.org/platform/download/7.10.2/haskell-platform-7.10.2-a-unknown-linux-deb7.tar.gz | tar xzf - -C /tmp
 
