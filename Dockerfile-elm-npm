@@ -1,0 +1,7 @@
+FROM fedora:23
+
+MAINTAINER Ryan Scott Brown
+
+RUN dnf install -y npm nodejs && dnf clean all
+
+RUN npm install -g elm
