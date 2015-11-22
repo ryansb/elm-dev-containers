@@ -1,0 +1,7 @@
+FROM ryansb/haskell
+
+MAINTAINER Ryan Scott Brown
+
+ADD BuildFromSource.hs /tmp/BuildFromSource.hs
+
+RUN dnf install -y autoconf automake gcc git glibc-devel gmp-devel libtool make ncurses-devel zlib-devel
