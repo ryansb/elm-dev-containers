@@ -2,4 +2,4 @@ FROM ryansb/elm-base
 
 MAINTAINER Ryan Scott Brown
 
-RUN cd /usr/local && runhaskell /tmp/BuildFromSource.hs 0.15.1
+RUN cd /usr/local && runhaskell /tmp/BuildFromSource.hs 0.15
